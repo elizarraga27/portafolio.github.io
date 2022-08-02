@@ -55,7 +55,7 @@
 								<h3>Bolo 3 Leite</h3>
 								<p>Web Site feito com linguagem HTML e CSS básico aprendido na Toti</p>
 								<a href="https://github.com/elizarraga27/bolo" target="_blank" class="button large scrolly">Repositorio</a>
-								<a href="web site/bolo_3_leite/index.html" target="_blank" class="button large scrolly"> Ver Demo </a>
+								<a href="web site/bolo/index.html" target="_blank" class="button large scrolly"> Ver Demo </a>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -150,24 +150,24 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
+							<form class='form' id='form' method="post" action="#">
 								<div class="row">
 									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Nome" />
+										<input type="text" name="name" id="name" placeholder="Nome" required />
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
+										<input type="text" class='email' name="email" id="email" placeholder="Email" />
 									</div>
 									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Tema" />
+										<input type="text" name="subject" id="subject" placeholder="Tema" required />
 									</div>
 									<div class="col-12">
 										<textarea name="message" id="message" placeholder="Mensagem"></textarea>
 									</div>
 									<div class="col-12">
 										<ul class="actions">
-											<li><input type="submit" value="Enviar" /></li>
-											<li><input type="reset" value="Limpar" class="alt" /></li>
+											<li><button type="submit" disabled>enviar</button></li>
+											<li><button type="reset" value="Limpar" class="alt">Reset</button></li>
 										</ul>
 									</div>
 								</div>
@@ -180,7 +180,17 @@
 								<li><a href="https://www.facebook.com/eduardo.lizarraga.921" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="https://www.linkedin.com/in/eduardo-alejandro-lizarraga-villarroel-0aa4a8139/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/elizarraga27" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								
+								<!--
+								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
+								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
+								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
+								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
+								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
+								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
+								-->
 							</ul>
 							<hr />
 						</div>
@@ -193,7 +203,14 @@
 				</div>
 			</article>
 
-		
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/validity.js"></script>
 
 	</body>
 </html>
