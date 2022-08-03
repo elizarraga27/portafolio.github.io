@@ -1740,6 +1740,14 @@ input, select, textarea {
 			.button.alt:active {
 				background-color: #3f3f3f;
 			}
+			/*Disabled*/
+
+			button:disabled {
+				background-color: #444;
+			}
+			button:hover:disabled {
+				background-color: #444;
+				}		
 
 /* List */
 

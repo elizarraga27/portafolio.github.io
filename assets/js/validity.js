@@ -31,9 +31,12 @@ function validateNotEmpty(e) {
 function displayError(message, field) {
 	clearError(field)
 	field.classList.add('is-invalid');
-	let error = document.createElement('small');
+	let error = document.createElement('p');
 	error.style.color = 'red';
 	error.classList.add('error-message');
+	error.textContent = message;
+	error.style.textAlign = 'left';
+	error.style.marginBottom = '-25px';
 	error.textContent = message;
 	field.parentElement.appendChild(error);
 }
@@ -78,7 +81,8 @@ function disableSubmit() {
 	submit.disabled = true;
 }
 
-
+document.querySelectorAll('textarea').forEach(el => el.classList.add('not-validated'));
+document.querySelectorAll('textarea:required').forEach(el => el.addEventListener('keyup', validateNotEmpty));
 document.querySelectorAll('input').forEach(el => el.classList.add('not-validated'));
 document.querySelectorAll('input.email').forEach(el => el.addEventListener('keyup', validateEmail));
 document.querySelectorAll('input:required').forEach(el => el.addEventListener('keyup', validateNotEmpty));
