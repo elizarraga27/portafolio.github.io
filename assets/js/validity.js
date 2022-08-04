@@ -1,8 +1,8 @@
 function validateEmail(e) {
 	let field = e.target;
 	let fieldValue = field.value;
-
-	if (fieldValue.search('@') == -1) {
+	let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	if(!(fieldValue.match(mailformat))) {
 		displayError('Email não é válido', field);
 	}
 	else {
